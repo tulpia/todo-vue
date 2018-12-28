@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TODO App - VueJS</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="title-container">
+            <h1>{{title}}</h1>
+            <p>{{subtitle}}</p>
+        </div>
+        <div class="list-container">
+            <div class="list-item" v-for="todo in list">
+                <p class="list-text">{{todo.todo}}</p>
+            </div>
+        </div>
+        <div class="list-add__container">
+            <input type="text" class="input-add" v-model="todo" placeholder="your todo">
+            <div class="btn-add" v-on:click="addToDo()" >
+                <p class="btn-add__text">{{btnText}}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* Faire le style du TODO */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#app {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 600px;
+    background: rgb(250, 250, 250);
+    border-radius: 10px;
+    position: relative;
+    margin-top: 10%;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
+    padding: 70px 40px;
+    margin-bottom: 50px;
+}
+
+.title-container {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1, p {
+    padding: 0;
+    margin: 0;
+}
+.title-container h1 {
+    font-weight: 900;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.title-container p {
+    font-size: 20px;
+}
+
+.list-container {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.list-item {
+    width: 100%;
+    background: #ECF0F1;
+    height: 80px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    transition: all 250ms ease;
+    transform: translate(0, 0%);
+}
+
+.list-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.list-item:hover {
+    background: rgb(227, 232, 233);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.05);
+    transform: translate(0, -5%);
+    transition: all 250ms ease;
+}
+
+.list-text {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.list-add__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-add {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid rgba(0,0,0,0.2);
+    height: 60px;
+    border-radius: 6px;
+    width: 100%;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
+.btn-add {
+    background: #E74C3C;
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    cursor: pointer;
+    transform: translate(0, 0%);
+    transition: all 250ms ease;
+}
+
+.btn-add:hover {
+    transform: translate(0 , -10%);
+    transition: all 250ms ease;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.05);
+}
+
+.btn-add__text {
+    color: white;
+    font-weight: bold;
+}
